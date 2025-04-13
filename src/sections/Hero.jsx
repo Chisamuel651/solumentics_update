@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import Button from "../components/Button"
 import { words } from "../constants"
 import HeroExperience from "../components/HeroModels/HeroExperience"
+import AnimatedCounter from '../components/AnimatedCounter';
 
 
 const Hero = () => {
@@ -56,7 +57,7 @@ const Hero = () => {
 
                     <Button
                         className='md:w-80 md:h-16 w-60 h-12'
-                        id='button'
+                        id='counter'
                         text='See Our Work'
                     />
                 </div>
@@ -69,6 +70,8 @@ const Hero = () => {
                 </div>
             </figure>
         </div>
+
+        <AnimatedCounter />
     </section>
   )
 }
