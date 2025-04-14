@@ -1,18 +1,23 @@
 import React from 'react'
 
-const Button = ({ text, className, id }) => {
+const Button = ({ text, className, id, href, newTab }) => {
+    const isExternal = href && newTab;
   return (
     <a 
+        href={href ?? '#'}
+        target={isExternal ? '_blank': '_self'}
+        rel={isExternal ? 'noopener noreferrer': ''}
         onClick={(e) => {
-            e.preventDefault();
-            const target = document.getElementById(id)
-
-            if(target){
-                const offset = window.innerHeight * 0.15;
-                const top = target.getBoundingClientRect().top + window.scrollY - offset;
-                window.scrollTo({top, behavior: 'smooth'})
+            if (!href && id) {
+              e.preventDefault()
+              const target = document.getElementById(id)
+              if (target) {
+                const offset = window.innerHeight * 0.15
+                const top = target.getBoundingClientRect().top + window.scrollY - offset
+                window.scrollTo({ top, behavior: 'smooth' })
+              }
             }
-        }}
+          }}
         className={`${className ?? ""} cta-wrapper`}
     >
         <div className="cta-button group">
