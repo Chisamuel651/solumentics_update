@@ -16,7 +16,27 @@ const counterItems = [
     { value: 89, suffix: "%", label: "Client Retention Rate" },
 ]
 
+const navLinks = [
+    {
+        name: 'Work',
+        link: '#work',
+    },
+    {
+        name: 'Experience',
+        link: '#exeprience',
+    },
+    {
+        name: 'Skills',
+        link: '#skills',
+    },
+    {
+        name: 'Testimonials',
+        link: '#testimonials',
+    },
+]
+
 export {
     words,
-    counterItems
+    counterItems,
+    navLinks
 }
