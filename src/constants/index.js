@@ -68,10 +68,53 @@ const abilities = [
     },
 ]
 
+const experienceCards = [
+    {
+        review: "He consistently brings creativity and technical skill to the team, playing a key role in improving frontend performance. His ability to adapt quickly to new challenges and work across different parts of a project makes him a valuable asset in delivering smooth and fast user experiences.",
+        imgPath: "/images/exp-3.png",
+        logoPath: "/images/c-logo-3.jpg",
+        title: "Lead Dev - Fullstack Developer",
+        date: "January 2025 - Present",
+        location: "Remote, Stuttgart - Germany",
+        responsibilities: [
+            "Worked on client-facing web applications tailored to workflow automation and planning efficiency.",
+            "Collaborated with design and backend teams to ship responsive, performance-optimized features.",
+            "Delivered scalable front-end solutions that enhanced usability for real-world business use cases.",
+          ],
+      },
+      {
+        review: "Adaptable, fast, and reliable. Handled everything from AI tools to full game builds with zero hand-holding. Solid asset on any project.",
+        imgPath: "/images/c-logo-2.jpg",
+        logoPath: "/images/c-logo-2.jpg",
+        title: "Full Stack Developer",
+        date: "December 2023 - October 2024",
+        location: "Remote, Hong-Kong",
+        responsibilities: [
+            "Built a 2D game from the ground up using Unity—handled everything from design logic to final implementation.",
+            "Developed and fine-tuned LLM-based solutions tailored for real estate workflows, improving task automation and client interaction.",
+            "Engineered serverless applications using AWS services, focusing on scalability, performance, and cost-efficiency.",
+          ],
+      },
+      {
+        review: "Showed real growth and dedication. Took on both teaching and client work with professionalism. Always eager to learn and quick to deliver.",
+        imgPath: "/images/c-logo-1.jpg",
+        logoPath: "/images/c-logo-1.jpg",
+        title: "Junior Developer - Intern",
+        date: "September 2021 - July 2023",
+        location: "Onsite, Yaounde - Cameroon",
+        responsibilities: [
+            "Trained students in WordPress, HTML, and CSS—focusing on practical, real-world applications.",
+            "Contributed to client projects, building and customizing websites to meet business needs.",
+            "Grew rapidly by working across multiple tech stacks and collaborating closely with senior developers.",
+        ],
+    },
+]
+
 export {
     words,
     counterItems,
     navLinks,
     logoIconsLists,
-    abilities
+    abilities,
+    experienceCards
 }
